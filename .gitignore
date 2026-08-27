@@ -11,9 +11,6 @@ dist/
 *.sass-cache
 *.scss-cache
 
-# Compiled CSS
-css/
-
 # MacOS system files
 .DS_Store
 
