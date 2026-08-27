@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Stillward</title>
+  <meta name="description" content="Frontend-validated fictional checkout mock with safe payment placeholders.">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://stillward.example/checkout.html">
+  <meta property="og:title" content="Checkout | Stillward">
+  <meta property="og:description" content="Frontend-validated fictional checkout mock with safe payment placeholders.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stillward.example/checkout.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1667996366620-2d44470a1d54?auto=format&fit=crop&w=1400&q=82">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Checkout | Stillward">
+  <meta name="twitter:description" content="Frontend-validated fictional checkout mock with safe payment placeholders.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>S</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body data-page="checkout.html">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="siteHeader"></div>
+  <main id="main"><section class="py-4 border-bottom"><div class="container"><div class="d-flex flex-wrap gap-4"><div class="checkout-step active"><span class="checkout-dot">1</span> Information</div><div class="checkout-step active"><span class="checkout-dot">2</span> Shipping</div><div class="checkout-step"><span class="checkout-dot">3</span> Demo payment</div></div></div></section><section class="section-space pt-4"><div class="container"><div class="row g-5"><div class="col-lg-7"><form id="checkoutForm" novalidate><h1 class="display-5">Checkout</h1><p class="demo-note">Prototype checkout only. No real payment details are collected and no transaction is processed.</p><h2 class="h4 mt-4">Contact</h2><label class="form-label" for="email">Email</label><input class="form-control" id="email" name="email" type="email" required><div class="invalid-feedback">Enter a valid email.</div><h2 class="h4 mt-4">Shipping address</h2><div class="row g-3"><div class="col-12"><label class="form-label">Full name</label><input class="form-control" name="name" required></div><div class="col-12"><label class="form-label">Address</label><input class="form-control" name="address" required></div><div class="col-md-5"><label class="form-label">City</label><input class="form-control" name="city" required></div><div class="col-md-3"><label class="form-label">State / region</label><input class="form-control" name="region" required></div><div class="col-md-4"><label class="form-label">Postal code</label><input class="form-control" name="postal" required></div><div class="col-12"><label class="form-label">Country</label><select class="form-select" name="country" required><option value="">Choose…</option><option>United States</option><option>Canada</option><option>Philippines</option><option>Australia</option></select></div></div><h2 class="h4 mt-4">Shipping method</h2><label class="payment-option d-flex justify-content-between align-items-center"><span><input class="form-check-input me-2" type="radio" name="shippingMethod" checked> Standard · 4–7 business days</span><strong>Calculated</strong></label><h2 class="h4 mt-4">Billing address</h2><div class="form-check"><input class="form-check-input" type="checkbox" id="sameBilling" checked><label class="form-check-label" for="sameBilling">Same as shipping address</label></div><h2 class="h4 mt-4">Payment method</h2><div class="d-grid gap-2"><label class="payment-option"><input class="form-check-input me-2" type="radio" name="payment" checked required> Card provider placeholder <span class="text-muted-sw">(Stripe/Shopify/etc. in production)</span></label><label class="payment-option"><input class="form-check-input me-2" type="radio" name="payment"> Digital wallet placeholder</label></div><div class="demo-note mt-3"><i class="bi bi-shield-lock me-2"></i>No card number, CVV, or real payment information is requested in this demo.</div><button class="btn btn-primary btn-lg w-100 mt-4" type="submit">Place demo order</button></form></div><div class="col-lg-5" id="checkoutSummary"><div class="summary-card sticky-lg-top" style="top:110px"><h2 class="h4">Order summary</h2><div id="checkoutItems"></div><form id="promoCheckout" class="my-3"><div class="input-group"><input id="promoCheckoutInput" class="form-control" placeholder="Demo code"><button class="btn btn-outline-dark">Apply</button></div></form><div class="d-flex justify-content-between py-1"><span>Subtotal</span><span id="coSubtotal"></span></div><div class="d-flex justify-content-between py-1"><span>Discount</span><span id="coDiscount"></span></div><div class="d-flex justify-content-between py-1"><span>Shipping</span><span id="coShipping"></span></div><div class="d-flex justify-content-between py-1"><span>Estimated tax</span><span id="coTax"></span></div><div class="d-flex justify-content-between pt-3 mt-2 border-top fs-5"><strong>Total</strong><strong id="coTotal"></strong></div></div></div></div></div></section></main>
+  <div id="siteFooter"></div>
+  <!-- Demo photography uses public Unsplash photo download URLs; photo IDs remain visible in image src attributes. -->
+  <div id="sharedCommerceUi"></div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/store.js"></script>
+
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>

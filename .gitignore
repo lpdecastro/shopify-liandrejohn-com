@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Parcel cache
+.parcel-cache/
+
+# Dist folder
+dist/
+
+# Sass cache files
+*.sass-cache
+*.scss-cache
+
+# Compiled CSS
+css/
+
+# MacOS system files
+.DS_Store
+
+# IDE settings
+.vscode/
+
+# Environment Variables
+.env
